@@ -1,6 +1,7 @@
 # GNSS Pkgs
 
 ```bash
-$ nix profile install github:geoscienceaustralia/gnss-pkgs/master#rnxcmp
-$ nix profile install github:geoscienceaustralia/gnss-pkgs/master#ginan
+$ nix registry add flake:gnss-pkgs github:geoscienceaustralia/gnss-pkgs
+$ nix profile install gnss-pkgs#rnxcmp
+$ nix profile install gnss-pkgs#ginan
 ```
