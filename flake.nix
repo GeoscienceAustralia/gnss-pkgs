@@ -16,6 +16,7 @@
       in {
         packages = {
           ginan = import ./ginan { inherit pkgs; };
+          rnxcmp = import ./rnxcmp { inherit pkgs; };
         };
       }
     );
