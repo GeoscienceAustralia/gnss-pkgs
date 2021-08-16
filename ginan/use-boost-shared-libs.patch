@@ -1,0 +1,11 @@
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -48,7 +48,7 @@ set (CMAKE_Fortran_FLAGS "-g -frecursive -fall-intrinsics -fcheck=all -fbacktrac
+ #set(BOOST_INCLUDEDIR /data/work/lib/boost-1.70.0/include)
+ #set(BOOST_LIBRARYDIR /data/work/lib/boost-1.70.0/lib)
+ set(Boost_NO_SYSTEM_PATHS ON)
+-set(Boost_USE_STATIC_LIBS ON)
++set(Boost_USE_STATIC_LIBS OFF)
+ 
+ option(ENABLE_UNIT_TESTS        "ENABLE_UNIT_TESTS"         OFF)
+ option(ENABLE_MONGODB           "ENABLE_MONGODB"            OFF)

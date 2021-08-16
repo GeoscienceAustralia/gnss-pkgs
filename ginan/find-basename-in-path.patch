@@ -1,0 +1,15 @@
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -26,10 +26,10 @@ set (CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/../../bin")
+ file(GLOB_RECURSE sources fortran/*.f90 fortran/*.F90 fortran/*.f03 fortran/*.f fortran/*.for fortran/*.F)
+ foreach (file ${sources})
+ 	if ( ${CMAKE_SYSTEM_NAME} MATCHES "Darwin") 
+-	execute_process(COMMAND /usr/bin/basename    ${file} OUTPUT_VARIABLE fortranfile)
++	execute_process(COMMAND basename    ${file} OUTPUT_VARIABLE fortranfile)
+ 		#message("found DARWIN")
+ 	else()
+-		execute_process(COMMAND /usr/bin/basename -z ${file} OUTPUT_VARIABLE fortranfile)
++		execute_process(COMMAND basename -z ${file} OUTPUT_VARIABLE fortranfile)
+ 	endif()
+ 	set_source_files_properties(fortran/${fortranfile} PROPERTIES LANGUAGE Fortran)
+ 	#set_source_files_properties(fortran/${fortranfile} PROPERTIES COMPILE_FLAGS "-O3 -frecursive")
