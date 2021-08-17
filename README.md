@@ -7,6 +7,10 @@ Nix packages for the following GNSS software:
 * anubis (TODO)
 * gfzrnx (TODO)
 
+# Requirements
+
+Any Linux distribution or MacOS.
+
 # Install Nix
 
 1. Install the Nix package manager
