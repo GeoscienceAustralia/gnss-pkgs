@@ -26,7 +26,7 @@ nix-env -f '<nixpkgs>' -iA nixUnstable
 
 ```bash
 mkdir -p ~/.config/nix
-echo 'experimental-features = nix-command flakes' >> ~/.config/nix/nix.conf
+echo 'experimental-features = nix-command flakes ca-references' >> ~/.config/nix/nix.conf
 ```
 
 3. Register https://github.com/GeoscienceAustralia/gnss-pkgs as a Nix Flake
